@@ -1,13 +1,13 @@
-/*
-This is an example startup file. You can load it from your startup file
-(to be found in Platform.userAppSupportDir +/+ "startup.scd")
-*/
+	/*This is an example startup file. You can load it from your startup file
+	(to be found in Platform.userAppSupportDir +/+ "startup.scd")*/
 
-
-(
-s.reboot { // server options are only updated on reboot
+	(
+	
+	s.reboot { 
+	// server options are only updated on reboot
 	// configure the sound server: here you could add hardware specific options
 	// see http://doc.sccode.org/Classes/ServerOptions.html
+	
 	s.options.numBuffers = 1024 * 256; // increase this if you need to load more samples
 	s.options.memSize = 8192 * 32; // increase this if you get "alloc failed" messages
 	s.options.numWireBufs = 64; // increase this if you get "exceeded number of interconnect buffers" messages
@@ -42,5 +42,5 @@ s.reboot { // server options are only updated on reboot
 	};
 
 	s.latency = 0.3; // increase this if you get "late" messages
-};
-);
+	};
+	);
