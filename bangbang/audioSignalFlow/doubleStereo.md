@@ -1,5 +1,6 @@
 ```mermaid
 flowchart LR
+linkStyle default interpolate linear
 	mic-1 --> in-1
 	unused -.- in-2
 	subgraph STEREO DEVICE
