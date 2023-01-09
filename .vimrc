@@ -16,13 +16,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tidalcycles/vim-tidal'
 " Plugin 'sophacles/vim-processing'
 
-" Theme
-"Plugin 'junegunn/seoul256.vim'
-"Plugin 'mopp/sky-color-clock.vim'
-
-" Syntax
-"Plugin 'gorodinskiy/vim-coloresque'
-
 " Fast HTML
 Plugin 'mattn/emmet-vim'
 Plugin 'valloric/matchtagalways'
@@ -30,13 +23,6 @@ Plugin 'alvan/vim-closetag'
 Plugin 'sophacles/vim-processing'
 
 Plugin 'instant-markdown/vim-instant-markdown'
-
-" Plugin 'othree/html5.vim'
-" Plugin 'tpope/vim-markdown'
-" Plugin 'godlygeek/tabular'
-" Plugin 'plasticboy/vim-markdown'
-" Plugin 'neovim/node-host', { 'do': 'npm install' }
-" Plugin 'vimlab/mdown.vim', { 'do': 'npm install' }
 
 call vundle#end()            " required
 
@@ -56,8 +42,6 @@ syntax off
 " filetype plugin on
 "
 " filetype indent on
-
-"colo seoul256
 
 set nospell
 set autoindent
@@ -157,7 +141,6 @@ set statusline= " clear for when vimrc is reloaded
 set statusline=%.40F " full path to file (max width 20)
 set statusline+=%= " right align
 set statusline+=\ %l:%c " line number:column
-"set statusline+=%#SkyColorClockTemp#\ %#SkyColorClock#%{sky_color_clock#statusline()} " display SkyColorClock
 " }}}
 
 " MARKDOWN SETTINGS {{{
